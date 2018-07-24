@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  </head>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu:500');
+
+      body  {
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        background-color: #3071a9;
+        margin: 0;
+      }
+      input:focus {
+          border-color:#140152 !important;
+      }
+      #title {
+      font-size: 40px;
+    }
+      nav {
+        background-color: #0B3C5D;
+        color: #ffffff;
+        height: auto;
+        /* padding-top: 20px; */
+      }
+      .container {
+        margin: 0 auto;
+        background-color: #f2f2f2;
+        height: auto;
+        width: 70%;
+        padding: 10px;
+        align-self: center;
+      }
+      .labels {
+        display: inline-block;
+        text-align: right;
+        width: 40%;
+        vertical-align: top;
+        margin-top: 20px;
+}
+      .input-tab {
+        display: inline-block;
+        text-align: left;
+        width: 50%;
+        margin-left: 10px;
+}
+      .dstv {
+        font-size: 30px;
+        color: #fff;
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+      }
+      .text-input {
+        display: inline-block;
+        width: 90%;
+        padding: 5px;
+        margin: 18px 0 0 10px;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      #dropdown {
+        width: 90%;
+        padding: 5px;
+        margin: 20px 0 10px 10px;  
+        border-radius: 3px;
+        font-family: inherit;
+        font-size: 15px;
+        height: 40px;
+}
+      .radio-buttons {
+        padding: 3px;
+        margin-top: 10px;
+      }
+      #submit {
+        width: 120px;
+        height: 50px;
+        background-color: #3071a9;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 30px;
+        align-self: center;
+        font-family: inherit;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #0095da;
+      }
+      .fab {
+          padding: 20px;
+          font-size: 30px;
+          width: 60px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+          border-radius: 60%;
+          color: #afd9ee;
+      }
+      .fa:hover {
+          opacity: 0.7;
+      }
+      footer {
+          background-color: #0B3C5D;
+         
+      }
+    li {
+        display: inline;
+    }
+    #copyright {
+        color: #fff;
+    }
+    @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .input-tab {
+    width: 90%;
+    float: left;
+    margin-left: -10px;
+  }
+  .text-input {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
+}
+  </style>
+  <body>
+        <section id= "header">
+                <nav>
+                <a href="#">
+                  <img src="https://i2.wp.com/brandspurng.com/wp-content/uploads/2017/03/DStv-Article-Clarity-Launch-980x368_lrg.jpg?fit=980%2C551&ssl=1" 
+                  width="50" height="50" class="d-inline-block align-top" alt="DStv logo">
+                  <span class= "dstv">MULTICHOICE NIGERIA</span>
+                </a>
+                </nav>
+        </section>
+    <section id="content">
+        <center><h1 id="title">Survey Form</h1></center>
+        <div class="container">
+                <center><p id="description">Let us know how we can improve on our services</p></center>
+            <div class="row col-md-6">
+                <form id="survey-form" method="POST">
+                        <div class="labels">
+                            <label id="name-label" for="name">First Name</label></div>
+                        <div class="input-tab">
+                            <input class="text-input" type="text" id="name" name="name" placeholder="Enter your fullname" autofocus required></div>
+
+                        <div class="labels">
+                            <label id="email-label" for="email">Email</label></div>
+                        <div class="input-tab">
+                            <input class="text-input" type="email" id="email" name="email" placeholder="Email address" required></div>
+
+                        <div class="labels">
+                            <label id="number-label" for="age">Age</label></div>
+                        <div class="input-tab">
+                            <input class="text-input" type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age"></div>
+
+                        <div class="labels">
+                                    <label for="dropdown">Which package do you usually subscribe to?</label></div>
+                                  <div class="input-tab">
+                                    <select id="dropdown" name="package" class= "dropdown">
+                                      <option disabled value selected>Select an option</option>
+                                      <option value="fta">DStv FTA Plus NGN1600</option>
+                                      <option value="access">DStv Access NGN1900</option>
+                                      <option value="family">DStv Family NGN3800</option>
+                                      <option value="compact">DStv Compact NGN6300</option>
+                                      <option value="compact-plus">DStv Compact Plus NGN9900</option>
+                                      <option value="premium">DStv Premium NGN14700</option>
+                                    </select>
+                                    </div>
+                                    <div class="labels">
+                                            <label>What is your favorite genre?<br>(Check all that apply):</label></div>
+                                          <div class="input-tab">
+                                            <input type="checkbox" name="alone" value="alone"> Audio<br>
+                                            <input type="checkbox" name="children" value="children"> Children<br>
+                                            <input type="checkbox" name="family" value="family"> Documentary<br>
+                                            <input type="checkbox" name="general" value="general"> General Entertainment<br>
+                                            <input type="checkbox" name="lifestyle" value="lifestyle"> Lifestyle & Culture<br>
+                                            <input type="checkbox" name="movies" value="movies"> Movies<br>
+                                            <input type="checkbox" name="music" value="music"> Music<br>
+                                            <input type="checkbox" name="news" value="news"> News & Commerce<br>
+                                            <input type="checkbox" name="religion" value="religion"> Religion<br>
+                                            <input type="checkbox" name="sports" value="sports"> Sports<br>
+                                            <input type="checkbox" name="all" value="all"> All<br>
+                                          </div>   
+
+                                                <div class="labels">
+                                                  <label for="userRating">How likely will you recommend DStv to someone else?</label>
+                                                </div>
+                                                <div class="input-tab radio-buttons">
+                                                  <ul style="list-style: none;">
+                                                    <li class="radio"><label><input name="radio-buttons" value="definitely"  type="radio" class="userRatings" > Definitely</label></li>
+                                                    <li class="radio"><label><input name="radio-buttons" value="maybe"  type="radio" class="userRatings" > Maybe</label></li>
+                                                    <li class="radio"><label><input name="radio-buttons" value="not sure"  type="radio" class="userRatings" > Not sure</label></li>
+                                                  </ul>
+                                                </div>  
+
+                                                <div class="labels">
+                                                        <label for="comments">Tell us more about your favorite, services or complaints.</label></div>
+
+                                                      <div class="input-tab">
+                                                        <textarea class="text-input" id="comments" name="comments" rows="10" cols="40" placeholder="Your comments..."></textarea></div>
+
+                                                        <div class="btn">
+                                                        <center><button id="submit" type="submit">Submit</button></center>
+                                                    </div>             
+                </form>
+            </div>
+        </div>
+      </section>
+        <center><footer>
+          <ul class= "contacts">
+                  <li id="copyright"> &copy; July, 2018 Copyright Enyioma</li>
+                  <li><a href="https://twitter.com/Fynewily" target= "_blank" class="fab fa-twitter"></a></li>
+                  <li><a href="https://www.linkedin.com/in/enyioma-nwadibia-40b59244/" target= "_blank" class="fab fa-linkedin"></a></li>
+                  <li><a href="https://github.com/fynewily" target= "_blank" class="fab fa-github"></a></li>
+          </ul> 
+        </footer></center>
+   
+    
+  </body>
+</html>
